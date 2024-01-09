@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web.vladimir.dev</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style-stack.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animacije.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="logo">web.vladimir.dev</a>
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="false-nav"><button class="dropbtn"><i class="fa-solid fa-xmark"
+                        style="color: #ffffff;"></i></button>
+                <div class="dropdown-content">
+                    <a href="../index.html" class="active">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="contact">
+            <div class="container">
+                <div id="mySidenav" class="sidenav">
+                    <a href="https://www.linkedin.com/in/vladimir-jovanovi%C4%87-234821285/" id="linkedin"> Linkedin <i
+                            class="fa fa-linkedin fa-1x"></i>
+                    </a>
+                    <a href="https://www.instagram.com/web.vladimir.dev/?hl=en" id="instagram"> Instagram <i
+                            class="fa fa-instagram fa-1x"></i></a>
+                    <a href="https://github.com/VladaPn" id="github"> Github <i class="fa fa-github fa-1x"></i></a>
+                    <a href="https://www.youtube.com/@webVladimirDev" id="codepen"> Youtube <i
+                            class="fa fa-youtube fa-1x"></i></a>
+                </div>
+                <h1 class="form-title">Contact us</h1>
+                <form id="form" class="topBefore" onsubmit="return validateForm()">
+
+                    <input id="name" type="text" placeholder="NAME*">
+                    <input id="email" type="text" placeholder="E-MAIL*">
+                    <textarea id="message" type="text" placeholder="MESSAGE*"></textarea>
+                    <input id="submit" type="submit" value="GO!">
+
+                </form>
+                <div id="error"></div>
+                <p class="right-text">Or you can contact me on one of the social media platforms.</p>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="container">
+            <a href="" class="logo">web.vladimir.dev</a>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/vladimir-jovanovi%C4%87-234821285/" class="icon"> <i
+                        class="fa fa-linkedin fa-1x"></i>
+                </a>
+                <a href="https://www.instagram.com/web.vladimir.dev/?hl=en" class="icon"><i
+                        class="fa fa-instagram fa-1x"></i></a>
+                <a href="https://github.com/VladaPn" class="icon"><i class="fa fa-github fa-1x"></i></a>
+
+            </div>
+            <p class="quote"><i>Simplicity is the soul of efficiency.</i></p>
+            <p class="copy">Copyright © 2024 web.vladimir.dev.</p>
+        </div>
+    </footer>
+    <script src="formValid.js"></script>
+    <script src="car.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
+    </script>
+    <script src="https://kit.fontawesome.com/3da59cecef.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

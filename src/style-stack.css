@@ -1,0 +1,289 @@
+.stack h5 {
+  font-size: 28px;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* fejd sranja*/
+.fade {
+  margin: 2rem;
+  align-items: center;
+
+  font-size: 4rem;
+  transition: opacity 4s ease-in-out;
+}
+
+.fadeOut {
+  opacity: 0;
+}
+
+.fadeIn {
+  opacity: 1;
+}
+
+/* nastavak rada */
+
+.stack-items {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 25px;
+}
+
+.stack-item img {
+  display: block;
+  margin-inline: auto;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 10px;
+  transition: 1s linear;
+  max-width: 85%;
+}
+
+.stack-item img:hover {
+  border: 1px solid #232529;
+  transform: rotate(360deg);
+}
+
+.stack-sec h5 {
+  margin-bottom: 50px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+}
+
+h5::before,
+h3::before,
+h4::before,
+h6::before {
+  content: '';
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  left: -10px;
+  background-color: #B90C3B;
+  width: 5px;
+  z-index: 101;
+}
+
+h5::after,
+h3::after,
+h4::after,
+h6::after {
+  content: '';
+  position: absolute;
+  height: 50%;
+  top: 0;
+  left: -10px;
+  background-color: #0F1A52;
+  width: 5px;
+  z-index: 101;
+}
+
+.stack-sec {
+  padding-top: 80px;
+  border-bottom: 1px solid #232529;
+  margin-bottom: 70px;
+  min-height: 100vh;
+}
+
+.animiran {
+  margin-bottom: 120px !important;
+}
+
+.stack-desc {
+  padding-top: 12%;
+}
+
+.car-container {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.car-desc p {
+  margin-top: 0 !important;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  align-items: stretch;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+.cards h4 {
+  font-size: 1.5rem;
+}
+
+.card {
+  border-top: 1px solid #232529;
+  border-bottom: 1px solid #232529;
+}
+
+.popover img {
+  max-width: 200px;
+}
+
+.qs {
+  background-color: white;
+  border-radius: 50%;
+  color: #232529;
+  cursor: default;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  height: 36px;
+  width: 36px !important;
+  line-height: 36px;
+  position: relative;
+  text-align: center;
+  width: 30px;
+  border: 1px solid #232529;
+  margin-bottom: 15px;
+  transition: all 0.5s linear;
+
+  .popover {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 5px;
+    bottom: 42px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: none;
+    font-size: 12px;
+    left: 0px;
+    padding: 7px 10px;
+    position: absolute;
+    width: 200px;
+    z-index: 4;
+
+
+  }
+
+  &:hover {
+    background-color: #232529;
+    color: white;
+
+    .popover {
+      display: block;
+      animation: fade-in .3s linear 1, move-up .3s linear 1;
+      -moz-animation: fade-in .3s linear 1, move-up .3s linear 1;
+      -ms-animation: fade-in .3s linear 1, move-up .3s linear 1;
+    }
+  }
+}
+
+footer {
+  background-color: #B90C3B;
+  padding-top: 50px;
+  color: white !important;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer .logo {
+  color: white;
+}
+
+.quote {
+  font-size: 24px;
+  color: white;
+  padding-block: 25px;
+}
+
+.quote i {
+  position: relative;
+  color: white;
+}
+
+.copy {
+  font-size: 12px;
+}
+
+.my-projects {
+  margin-bottom: 180px;
+}
+
+.icons {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon i {
+  color: white;
+  font-size: 28px;
+  transition: all 0.5s linear;
+}
+
+.icon i:hover {
+  color: #0F1A52;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes move-up {
+  from {
+    bottom: 30px;
+  }
+
+  to {
+    bottom: 42px;
+  }
+}
+
+@-moz-keyframes move-up {
+  from {
+    bottom: 30px;
+  }
+
+  to {
+    bottom: 42px;
+  }
+}
+
+@-ms-keyframes move-up {
+  from {
+    bottom: 30px;
+  }
+
+  to {
+    bottom: 42px;
+  }
+}

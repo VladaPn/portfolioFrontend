@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web.vladimir.dev</title>
+    <link rel="stylesheet" href="src/style-stack.css">
+    <link rel="stylesheet" href="src/menu.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/animacije.css">
+    <link rel="stylesheet" href="src/carousel.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">web.vladimir.dev</a>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="src/services.html">Services</a></li>
+                <li><a href="src/contact.html">Contact</a></li>
+            </ul>
+            <div class="false-nav"><button class="dropbtn"><i class="fa-solid fa-xmark"
+                        style="color: #ffffff;"></i></button>
+                <div class="dropdown-content">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="src/services.html">Services</a>
+                    <a href="src/contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div id="mySidenav" class="sidenav">
+                <a href="https://www.linkedin.com/in/vladimir-jovanovi%C4%87-234821285/" id="linkedin"> Linkedin <i
+                        class="fa fa-linkedin fa-1x"></i>
+                </a>
+                <a href="https://www.instagram.com/web.vladimir.dev/?hl=en" id="instagram"> Instagram <i
+                        class="fa fa-instagram fa-1x"></i></a>
+                <a href="https://github.com/VladaPn" id="github"> Github <i class="fa fa-github fa-1x"></i></a>
+                <a href="https://www.youtube.com/@webVladimirDev" id="codepen"> Youtube <i
+                        class="fa fa-youtube fa-1x"></i></a>
+            </div>
+            <div class="containerXL">
+                <div class="container">
+                    <div class="hero-title slide-right">
+                        <h2>I turn your ideas into code.</h2>
+                        <p>My name is Vladimir, I`m a freelance frontend developer and designer based in Paraćin,
+                            Serbia.
+                            I build modern, practical and responsive web applications for your business.
+                        </p>
+                        <div class="buttons">
+                            <span class="qs">CV<span class="popover above"><img src="CV.png" alt="">Download
+                                    CV</span></span> <br>
+                            <span class="scroll-me">Scroll <i class="fa-solid fa-arrow-down-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="hero-img slide-left">
+                        <img src="imgs/yo2.png" class="floating" alt="">
+                    </div>
+                </div>
+        </section>
+        <section class="stack-sec">
+            <div class="container">
+                <div class="type">
+                    <h2 class="animiran animiran-aktiv">Let me show you what I know</h2>
+                    <div class="stack fade fadeOut">
+                        <h5>Which techonologies I use?</h5>
+                        <div class="stack-items">
+                            <div class="stack-item"><img src="imgs/html.png" alt=""></div>
+                            <div class="stack-item"><img src="imgs/css.png" alt=""></div>
+                            <div class="stack-item"><img src="imgs/js.png" alt=""></div>
+                            <div class="stack-item"><img src="imgs/but.png" alt=""></div>
+                            <div class="stack-item"><img src="imgs/tajp.png" alt=""></div>
+                            <div class="stack-item"><img src="imgs/react.png" alt=""></div>
+                            <div class="stack-item"><img src="imgs/pajton.png" alt=""></div>
+                            <div class="stack-item"><img src="imgs/git.png" alt=""></div>
+                        </div>
+                        <p class="stack-desc">
+                            This is very functional mixture of web techonoliges which combines the fundamentals of web
+                            development with modern tools and languages to create a robust and engaging web
+                            applications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-projects">
+            <div class="container">
+                <h2>My projects</h2>
+
+                <!-- Start DEMO HTML (Use the following code into your project)-->
+                <!-- Full-width images with number and caption text -->
+                <div class="car-container">
+
+                    <div class="car-desc">
+                        <p>In this gallery, you can see some of my projects of various design types - from a modern
+                            cryptocurrency store to a small private sunglasses shop. Two e-commerce applications (Crown
+                            and Sneakers) built in React.js are also showcased. To avoid overloading the website, only
+                            the appearance and description of the pages are provided. I'll be more than happy to share
+                            the live versions of these projects and parts of the code with you when you contact me.</p>
+                    </div>
+                    <div class="carousel-container">
+                        <div class="mySlides animate">
+                            <img src="skrinovi/bit.png" alt="slide">
+                            <div class="text">Bitcoin.com</div>
+                        </div>
+
+                        <div class="mySlides animate">
+                            <img src="skrinovi/ecomm.png" alt="slide">
+                            <div class="text">Sneakers e-shop</div>
+                        </div>
+
+                        <div class="mySlides animate">
+                            <img src="imgs/madOvaj.png" alt="slide">
+                            <div class="text">Mademoiselle</div>
+                        </div>
+
+                        <div class="mySlides animate">
+                            <img src="skrinovi/sun1.png" alt="slide">
+                            <div class="text">Sunglasses.io</div>
+                        </div>
+
+                        <div class="mySlides animate">
+                            <img src="skrinovi/crown.png" alt="slide">
+                            <div class="text">Crown - webshop</div>
+                        </div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="prevSlide()">❮</a>
+                        <a class="next" onclick="nextSlide()">❯</a>
+
+                        <!-- The dots/circles -->
+                        <div class="dots-container">
+                            <span class="dots" onclick="currentSlide(1)"></span>
+                            <span class="dots" onclick="currentSlide(2)"></span>
+                            <span class="dots" onclick="currentSlide(3)"></span>
+                            <span class="dots" onclick="currentSlide(4)"></span>
+                            <span class="dots" onclick="currentSlide(5)"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- END EDMO HTML (Happy Coding!)-->
+                <div class="cards">
+                    <div class="card">
+                        <h4>Bitcoin.com</h4>
+                        <p>Welcome to Bitcoin.com, your ultimate destination for Bitcoin-inspired accessories. Dive into
+                            the world of cryptocurrencies with our carefully curated collection of Bitcoin-themed
+                            products, perfect for crypto enthusiasts and anyone who wants to embrace the blockchain
+                            revolution in style.
+                            We believe that through modern design, we have successfully conveyed the entire 'tech and
+                            business' vibe.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4>Sneakers e-shop</h4>
+                        <p>Sneaker Street is more than just a sneaker store; it's a celebration of sneaker culture and
+                            an appreciation of the artistry behind each pair. Whether you're a seasoned collector, an
+                            aspiring sneakerhead, or simply someone who appreciates the perfect pair of kicks, Sneaker
+                            Street is your go-to destination.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Mademoiselle</h4>
+                        <p>What they do at Mademoiselle Cosmetics is art. Our task is to make their website a small work
+                            of art as well. A pleasant and subdued color palette, combined with classy typography and
+                            subtle animations, represents Mademoiselle and their work in the best light. At first
+                            glance, it may seem like a demanding project with many items, but the website is
+                            characterized by intuitiveness and a great user experience.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Sunglasses.io</h4>
+                        <p>Sunglasses.io is not just an ordinary sunglasses store; the products it offers are of
+                            top-notch quality and an integral part of everyday style. We have ensured that the visual
+                            presentation aligns with this concept. The website is responsive, with a modern, clean
+                            design that still boasts enough elements to captivate and engage you</p>
+                    </div>
+                    <div class="card">
+                        <h4>Crown Webshop</h4>
+                        <p>Crown webshop is online store that sell high-quality products for people who want clean and
+                            different outfit. This store represents an entire culture, and we've ensured that its
+                            website keeps pace with it. A modern appearance, combined with intuitiveness and speed,
+                            provides Crown Shop with everything it needs to be the best e-commerce store in its
+                            category. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <a href="" class="logo">web.vladimir.dev</a>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/vladimir-jovanovi%C4%87-234821285/" class="icon"> <i
+                        class="fa fa-linkedin fa-1x"></i>
+                </a>
+                <a href="https://www.instagram.com/web.vladimir.dev/?hl=en" class="icon"><i
+                        class="fa fa-instagram fa-1x"></i></a>
+                <a href="https://github.com/VladaPn" class="icon"><i class="fa fa-github fa-1x"></i></a>
+
+            </div>
+            <p class="quote"><i>Simplicity is the soul of efficiency.</i></p>
+            <p class="copy">Copyright © 2024 web.vladimir.dev.</p>
+        </div>
+    </footer>
+    <script src="src/car.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js">
+    </script>
+    <script src="https://kit.fontawesome.com/3da59cecef.js" crossorigin="anonymous"></script>
+    <script src="src/main.js"></script>
+</body>
+
+</html>
